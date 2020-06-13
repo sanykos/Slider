@@ -83,7 +83,7 @@ gulp.task("prod", () => {
     gulp.src("./src/assets/**/*.*")
         .pipe(gulp.dest(prod + "/assets"));
 
-    gulp.src("./src/js/main.js")
+    gulp.src("./src/js/common.js")
         .pipe(webpack({
             mode: 'production',
             output: {
